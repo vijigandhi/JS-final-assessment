@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCKAP Palli Inventory</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <i class="fa-regular fa-clipboard"></i>
+            <h3>DCKAP Palli Inventory</h3>
+        </div>
+    </header>
+    <div class="mainContainer">
+        
+        <p id="Dashboard">Dashboard</p>
+
+        <!-- dashboard container -->
+        <div class="highestProduct-container">
+            <div class="highestProductList list1">
+            
+            </div>
+            <div class="highestProductList list2">
+            
+            </div>
+            <div class="highestProductList list3">
+      
+            </div>
+        </div>
+
+        <!-- add and update buttons container -->
+        <div class="buttons-container">
+            <div class="addProducts">
+                <button id="addProduct">Add Product</button>
+            </div>
+            <div class="updateProduct">
+                <button id="updateProduct">Update Inventory</button>
+            </div>
+        </div>
+
+        <!-- barchar container -->
+        <div class="barChart-container">
+            <canvas id="myChart"></canvas>
+        </div>
+
+        <!-- Recipient container -->
+        <div class="recipient-container">
+            <table id="recipientTable">
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Recipient</th>
+                        <th id="Quantity">Quantity<i class="fa-solid fa-sort" id="sortQuantity"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+            </table>
+        </div>
+    </div><br><br>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>&copy; 2024 DCKAP Palli. All Rights Reserved.</p>
+            </div>
+            <div class="footer-center">
+                <a href="#" class="footer-link">Privacy Policy</a> |
+                <a href="#" class="footer-link">Terms of Service</a>
+            </div>
+            <div class="footer-right">
+                <p>Contact: <a href="mailto:support@dckap.com" class="footer-link">support@dckap.com</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <script type="module" src="script.js"></script>
+</body>
+</html>

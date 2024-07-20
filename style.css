@@ -1,0 +1,281 @@
+body {
+    width: 100%;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.mainContainer {
+    width: 100%;
+    margin: 0 auto;
+    padding:0;
+
+}
+
+#Dashboard{
+    margin-top: 6%;
+text-align: center;
+}
+
+/* navbar */
+.navbar {
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+    display: flex;
+    gap: .5%;
+    align-items: center;
+    cursor: pointer;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+}
+
+
+.navbar i {
+    margin-left: 10px;
+}
+
+.navbar h3 {
+    margin: 0;
+}
+
+/**** highest product list ****/
+.highestProduct-container {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.highestProductList {
+    width: 25%;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.list1 {
+    border-left: 5px solid blue;
+}
+
+.list2 {
+    border-left: 5px solid rgb(255, 174, 22);
+}
+
+.list3 {
+    border-left: 5px solid rgb(7, 112, 47);
+}
+
+/*** add and update buttons ***/
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.addProducts, .updateProduct {
+    margin: 0;
+}
+
+.addProducts button, .updateProduct button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.addProducts button {
+    background-color: #28a745;
+    color: white;
+}
+
+.updateProduct button {
+    background-color: #1ca5b8;
+    color: white;
+}
+
+/*** recipient table ***/
+.recipient-container {
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto; 
+}
+
+#recipientTable {
+    width: 75%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#recipientTable th, #recipientTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    cursor: pointer;
+}
+
+#recipientTable th {
+    background-color: #000000;
+    color: white;
+    text-align: left;
+}
+
+#recipientTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#Quantity{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+/*** barchart container ***/
+.barChart-container {
+    margin-top: 20px;
+}
+
+#myChart {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+
+}
+
+/* Popup Container */
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, 0);
+    width: 90%;
+    max-width: 450px;
+    max-height: 80%;
+    border: 1px solid #ddd;
+    padding: 15px;
+    background: #fff;
+    z-index: 1000;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+}
+
+/* Popup Overlay */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: #333;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: #f00;
+}
+
+.popupTitles {
+    margin: 0;
+    font-size: 1.2em;
+    text-align: center;
+    color: #333;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    margin-bottom: 2px; 
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #555;
+}
+
+input {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+button[type="submit"] {
+    padding: 8px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: scale(1.03);
+}
+
+button[type="submit"]:active {
+    transform: scale(1);
+}
+
+
+/** Footer container **/
+.footer {
+    background-color: #2d3748; 
+    color: #ffffff; 
+    padding: 1rem 0;
+    margin-top: 2rem; 
+}
+
+
+.footer-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.footer-link {
+    color: #63b3ed;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #90cdf4;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1; 
+}
